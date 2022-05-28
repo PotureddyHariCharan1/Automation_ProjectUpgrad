@@ -8,7 +8,7 @@ pipeline{
 	timeout(time: 1, unit: 'MINUTES')
     }
     parameters{
-	string(name: 'BRANCH', defaultValue: 'master')
+	string(name: 'BRANCH', defaultValue: 'main')
 	choice(name: 'OPERATION',choices: ['A','B','C'])
     stages{
         stage('Unit Testing'){
