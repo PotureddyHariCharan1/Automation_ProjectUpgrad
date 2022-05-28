@@ -10,9 +10,9 @@ pipeline{
     parameters{
 	string(name: 'BRANCH', defaultValue: 'main')
 	choice(name: 'OPERATION',choices: ['A','B','C'])
-    stages{
-        stage('Unit Testing'){
-            steps{
+	stages{
+	stage('Unit Testing'){
+	steps{
                 sh "echo hello C32"
             }
         }
@@ -23,4 +23,5 @@ pipeline{
             }
         }
     }
-}}
+}
+}
